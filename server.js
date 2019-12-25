@@ -11,7 +11,9 @@ const Admin =['trafficAdmin','retextnd_traffic']
 const PORT = process.env.PORT || 3000
 
 
-server.listen(PORT)
+server.listen(PORT ,() => {
+  console.log(PORT)
+})
 app.use(cors());
 
 
